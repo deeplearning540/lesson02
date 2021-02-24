@@ -13,7 +13,7 @@ def main():
 
         label = (y > 1).astype(np.int8)
 
-        d = {'x1' : X[:,0],'x2': X[:,1], 'x3': X[:,2],'label': label,'raw':y}
+        d = {'x1' : X[:,0],'x2': X[:,1], 'x3': X[:,2], 'x4': X[:,3],'label': label,'raw':y}
         df = pd.DataFrame(data=d)
         fn = "clustering_data_{:02.0f}.csv".format(i)
         print(df.shape,"->",fn)
